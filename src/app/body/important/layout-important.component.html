@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="d-flex align-items-start">
+        <li class="nav-item m-5"><a class="nav-link disabled text-white" href="#">
+                <h3>Games On Sale</h3>
+            </a></li>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <div *ngFor="let important of important">
+            <app-body-important gameName={{important.gameName}} gameCreator={{important.gameCreator}}
+                discount={{important.discount}} originalPrice={{important.originalPrice}}
+                currentPrice={{important.currentPrice}} imagePath={{important.imagePath}}>
+                Loading
+            </app-body-important>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="d-flex justify-content-center">
+    <div *ngFor="let bigImportant of bigImportant">
+        <app-body-big-important gameName={{bigImportant.gameName}} gameDescription={{bigImportant.gameDescription}}
+            price={{bigImportant.price}} imagePath={{bigImportant.imagePath}}>
+            Loading
+        </app-body-big-important>
+    </div>
+</div>
