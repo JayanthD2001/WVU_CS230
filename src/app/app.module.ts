@@ -10,6 +10,7 @@ import { CatalogComponent } from './body/catalog/catalog.component';
 import { FreeGamesComponent } from './body/free-games/free-games.component';
 import { ImportantComponent } from './body/important/important.component';
 import { LayoutImportantComponent } from './body/important/layout-important.component';
+import { LayoutNewComponent } from './body/new/layout-new.component';
 import { NewComponent } from './body/new/new.component';
 import { PopularComponent } from './body/popular/popular.component';
 import { ReleasesComponent } from './body/releases/releases.component';
@@ -17,11 +18,23 @@ import { UpdatedComponent } from './body/updated/updated.component';
 import { BottomNavBarComponent } from './footer/bottom-nav-bar.component';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
+import { BrowsePageComponent } from './body/browse-page.component';
+import { StorePageComponent } from './body/store-page.component';
+import { NewsPageComponent } from './body/news-page.component';
+import { FaqPageComponent } from './body/faq-page.component';
+import { HelpPageComponent } from './body/help-page.component';
+import { AppRoutingModule } from './app-routing.module';
+import { TopNavBarComponent2 } from './header-2/top-nav-bar-2.component';
+import { NEWSComponent } from './body/NEWS-page/NEWS.component';
+import { FAQComponent } from './body/FAQ-page/FAQ.component';
+import { HELPComponent } from './body/HELP-page/HELP.component';
+import { BrowseComponent } from './body/Browse-page/Browse.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavBarComponent,
+    TopNavBarComponent2,
     BottomNavBarComponent,
     CarouselComponent,
     CatalogComponent,
@@ -35,10 +48,21 @@ import { LayoutMainComponent } from './layout/layout-main.component';
     LayoutMainComponent,
     BodyLayoutComponent,
     LayoutImportantComponent,
-    LayoutBigImportantComponent
+    LayoutBigImportantComponent,
+    LayoutNewComponent,
+    BrowsePageComponent,
+    StorePageComponent,
+    NewsPageComponent,
+    FaqPageComponent,
+    HelpPageComponent,
+    NEWSComponent,
+    FAQComponent,
+    HELPComponent,
+    BrowseComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

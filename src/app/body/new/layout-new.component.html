@@ -1,0 +1,15 @@
+<div class="col-auto m-5" style="background-color: rgb(51, 51, 51);">
+    <li class="nav-item d-flex justify-content-start ms-5 mb-0 mt-4" style="background-color: rgb(51, 51, 51);">
+        <a class="nav-link disabled text-white ms-5 mt-4" style="background-color: rgb(51, 51, 51);" href="#">
+            <h3>Free Games</h3>
+        </a>
+    </li>
+    <div class="col-0 d-flex justify-content-center" style="background-color: rgb(51, 51, 51);">
+        <div *ngFor="let newList of newList">
+            <app-body-new gameName={{newList.gameName}} freeTime={{newList.freeTime}}
+                currentState={{newList.currentState}} imagePath={{newList.imagePath}}>
+                Loading
+            </app-body-new>
+        </div>
+    </div>
+</div>
