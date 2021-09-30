@@ -14,7 +14,7 @@ import { LayoutNewComponent } from './body/new/layout-new.component';
 import { NewComponent } from './body/new/new.component';
 import { PopularComponent } from './body/popular/popular.component';
 import { ReleasesComponent } from './body/releases/releases.component';
-import { UpdatedComponent } from './body/updated/updated.component';
+import { RecentlyUpdatedComponent } from './body/recently-updated/recently-updated.component';
 import { BottomNavBarComponent } from './footer/bottom-nav-bar.component';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
@@ -29,6 +29,8 @@ import { NEWSComponent } from './body/NEWS-page/NEWS.component';
 import { FAQComponent } from './body/FAQ-page/FAQ.component';
 import { HELPComponent } from './body/HELP-page/HELP.component';
 import { BrowseComponent } from './body/Browse-page/Browse.component';
+import { LayoutRecentlyUpdatedComponent } from './body/recently-updated/layout-recently-updated.component';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +44,7 @@ import { BrowseComponent } from './body/Browse-page/Browse.component';
     NewComponent,
     PopularComponent,
     ReleasesComponent,
-    UpdatedComponent,
+    RecentlyUpdatedComponent,
     ImportantComponent,
     BigImportantComponent,
     LayoutMainComponent,
@@ -58,7 +60,8 @@ import { BrowseComponent } from './body/Browse-page/Browse.component';
     NEWSComponent,
     FAQComponent,
     HELPComponent,
-    BrowseComponent
+    BrowseComponent,
+    LayoutRecentlyUpdatedComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="d-flex align-items-start">
+        <li class="nav-item m-5"><a class="nav-link disabled text-white" href="#">
+                <h3>Recently Updated</h3>
+            </a></li>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <div *ngFor="let recentlyUpdated of recentlyUpdated">
+            <app-body-important gameName={{recentlyUpdated.gameName}} gameCreator={{recentlyUpdated.gameCreator}}
+                discount={{recentlyUpdated.discount}} originalPrice={{recentlyUpdated.originalPrice}}
+                currentPrice={{recentlyUpdated.currentPrice}} imagePath={{recentlyUpdated.imagePath}}>
+                Loading
+            </app-body-important>
+        </div>
+    </div>
+</div>
