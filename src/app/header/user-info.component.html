@@ -1,0 +1,13 @@
+<p *ngIf="myInfo == undefined" class="text-white">Failed fetching user info</p>
+<div *ngIf="myInfo != undefined">
+    <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-between">
+            <div class="flex-column text-white">
+                Name: {{myInfo.FirstName}} {{myInfo.LastName}}
+            </div>
+            <div class="flex-column text-white">
+                DisplayName: {{myInfo.DisplayName}}
+            </div>
+        </div>
+    </div>
+</div>

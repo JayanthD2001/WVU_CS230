@@ -30,6 +30,8 @@ import { FAQComponent } from './body/FAQ-page/FAQ.component';
 import { HELPComponent } from './body/HELP-page/HELP.component';
 import { BrowseComponent } from './body/Browse-page/Browse.component';
 import { LayoutRecentlyUpdatedComponent } from './body/recently-updated/layout-recently-updated.component';
+import { HttpClientModule} from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 
 @NgModule({
@@ -61,11 +63,13 @@ import { LayoutRecentlyUpdatedComponent } from './body/recently-updated/layout-r
     FAQComponent,
     HELPComponent,
     BrowseComponent,
-    LayoutRecentlyUpdatedComponent
+    LayoutRecentlyUpdatedComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
