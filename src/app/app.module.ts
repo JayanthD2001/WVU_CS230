@@ -64,7 +64,7 @@ import { UserInfoComponent } from './header/user-info.component';
     HELPComponent,
     BrowseComponent,
     LayoutRecentlyUpdatedComponent,
-    UserInfoComponent
+    UserInfoComponent,
   ],
   imports: [
     BrowserModule,
