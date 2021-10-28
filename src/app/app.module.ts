@@ -32,6 +32,9 @@ import { BrowseComponent } from './body/Browse-page/Browse.component';
 import { LayoutRecentlyUpdatedComponent } from './body/recently-updated/layout-recently-updated.component';
 import { HttpClientModule} from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { SignInComponent } from './body/SIGN-IN-page/SIGN-IN.component';
+import { FormsModule } from '@angular/forms';
+import { SignInPageComponent } from './body/sign-in-page.component';
 
 
 @NgModule({
@@ -65,11 +68,14 @@ import { UserInfoComponent } from './header/user-info.component';
     BrowseComponent,
     LayoutRecentlyUpdatedComponent,
     UserInfoComponent,
+    SignInComponent,
+    SignInPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

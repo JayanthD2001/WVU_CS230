@@ -4,6 +4,7 @@ import { BrowsePageComponent } from './body/browse-page.component';
 import { FaqPageComponent } from './body/faq-page.component';
 import { HelpPageComponent } from './body/help-page.component';
 import { NewsPageComponent } from './body/news-page.component';
+import { SignInPageComponent } from './body/sign-in-page.component';
 import { StorePageComponent } from './body/store-page.component';
 
 
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'news-page', component: NewsPageComponent},
   {path: 'faq-page', component: FaqPageComponent},
   {path: 'help-page', component: HelpPageComponent},
-  {path: 'browse-page', component: BrowsePageComponent}  
+  {path: 'browse-page', component: BrowsePageComponent},
+  {path: 'sign-in-page', component: SignInPageComponent}  
 ]
 
 @NgModule({

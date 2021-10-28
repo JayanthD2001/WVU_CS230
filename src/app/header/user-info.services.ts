@@ -16,4 +16,8 @@ export class UserInfoService {
         console.log(this.baseUrl + this.myInfoEndpoint);
         return this.http.get<UserInfo>(this.baseUrl + this.myInfoEndpoint);
     }
+
+    modifyUserInfo(data:UserInfo) {
+        return this.http.put(this.baseUrl + this.myInfoEndpoint, data);
+    }
 }
