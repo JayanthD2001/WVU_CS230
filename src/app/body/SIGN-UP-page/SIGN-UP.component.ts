@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { Observable } from "rxjs";
 import { UserInfo } from "src/app/header/user-info.model";
 import { UserInfoService } from "src/app/header/user-info.services";
 import { DatabaseService } from "../database.service";
@@ -9,21 +8,18 @@ import { DatabaseService } from "../database.service";
     templateUrl: 'SIGN-UP.component.html'
 })
 
-export class SignINComponent {
-    users!: Observable<Object | null>;
+export class SignUPComponent {
+    
     constructor(private infoService: UserInfoService, private dbService:DatabaseService) {
-
+        dbService.showData();
     }
 
     onUpdateUserInfo(data:UserInfo) {
         console.log("Sign In");
         console.log(data);
-        
-        for(var v in this.dbService.data()) {
-            
-        }
         this.infoService.modifyUserInfo(data).subscribe(data => {
             console.log("Data Sent");
         });
+        
     }
 }

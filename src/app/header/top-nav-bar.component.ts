@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { UserInfo } from "./user-info.model";
 
 @Component({
     selector: 'app-top-nav-bar',
@@ -8,4 +9,5 @@ import { Component } from "@angular/core";
 
 export class TopNavBarComponent {
 
+    myInfo: UserInfo["DisplayName"] | "" | undefined;
 }
