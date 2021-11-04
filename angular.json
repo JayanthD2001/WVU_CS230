@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "epicgames:build:production",
+            "firebaseProject": "epicgames-app",
+            "firebaseHostingSite": "epicgames-app"
+          }
         }
       }
     }

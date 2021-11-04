@@ -18,6 +18,6 @@ export class UserInfoService {
     }
 
     modifyUserInfo(data:UserInfo) {
-        return this.http.put(this.baseUrl + this.myInfoEndpoint, data);
+        return this.http.post(this.baseUrl + this.myInfoEndpoint, data);
     }
 }

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "epicgames-app": {
+      "hosting": {
+        "epicgames": [
+          "epicgames-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "epicgames-app"
+  }
+}

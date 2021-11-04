@@ -32,9 +32,14 @@ import { BrowseComponent } from './body/Browse-page/Browse.component';
 import { LayoutRecentlyUpdatedComponent } from './body/recently-updated/layout-recently-updated.component';
 import { HttpClientModule} from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
-import { SignInComponent } from './body/SIGN-IN-page/SIGN-IN.component';
 import { FormsModule } from '@angular/forms';
-import { SignInPageComponent } from './body/sign-in-page.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { SignUPComponent } from './body/SIGN-UP-page/SIGN-UP.component';
+import { SignUPPageComponent } from './body/sign-up-page.component';
+import { SignINComponent } from './body/SIGN-IN-page/SIGN-IN.component';
 
 
 @NgModule({
@@ -68,14 +73,18 @@ import { SignInPageComponent } from './body/sign-in-page.component';
     BrowseComponent,
     LayoutRecentlyUpdatedComponent,
     UserInfoComponent,
-    SignInComponent,
-    SignInPageComponent
+    SignUPComponent,
+    SignUPPageComponent,
+    SignINComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'epicgames-app'),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]
