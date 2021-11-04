@@ -5,8 +5,8 @@ import { UserInfoService } from "src/app/header/user-info.services";
 import { DatabaseService } from "../database.service";
 
 @Component({
-    selector: 'app-body-SIGN-UP',
-    templateUrl: 'SIGN-UP.component.html'
+    selector: 'app-body-SIGN-IN',
+    templateUrl: 'SIGN-IN.component.html'
 })
 
 export class SignINComponent {
