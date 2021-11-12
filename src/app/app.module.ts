@@ -40,6 +40,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { SignUPComponent } from './body/SIGN-UP-page/SIGN-UP.component';
 import { SignUPPageComponent } from './body/sign-up-page.component';
 import { SignINComponent } from './body/SIGN-IN-page/SIGN-IN.component';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -75,7 +76,8 @@ import { SignINComponent } from './body/SIGN-IN-page/SIGN-IN.component';
     UserInfoComponent,
     SignUPComponent,
     SignUPPageComponent,
-    SignINComponent
+    SignINComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,

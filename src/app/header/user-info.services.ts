@@ -6,7 +6,7 @@ import { UserInfo } from "./user-info.model";
 @Injectable({providedIn: 'root'})
 export class UserInfoService {
     private baseUrl:string = 'https://epicgames-app-default-rtdb.firebaseio.com/';
-    private myInfoEndpoint:string = 'my-info.json';
+    private myInfoEndpoint:string = '';
     
     constructor(private http: HttpClient) {
 

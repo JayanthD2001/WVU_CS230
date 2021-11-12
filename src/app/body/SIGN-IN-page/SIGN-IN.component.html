@@ -1,13 +1,13 @@
 <li class=""><a class="">
         <div class="d-flex justify-content-center col-12">
-            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+            <div class="card text-dark bg-light mb-3 my-3" style="max-width: 18rem;">
                 <div class="container d-flex justify-content-center">
                     <a class="navbar-brand nav-item" routerLink="/store-page">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Epic_Games_logo.svg" alt=""
                             width="38" height="40">
                     </a>
                 </div>
-                <div class="card-header">SIGN UP</div>
+                <div class="card-header">SIGN IN</div>
                 <form #signInForm=ngForm (ngSubmit)="onUpdateUserInfo(signInForm.value)">
                     <div class="card body input-group mt-3">
                         <input type="text" placeholder="Email Address" aria-label="Email Address" class="col-12" ngModel
@@ -15,17 +15,17 @@
                     </div>
 
                     <div class="card body input-group mt-3">
-                        <input type="text" placeholder="Password" aria-label="Password" class="col-12" ngModel
+                        <input type="password" placeholder="Password" aria-label="Password" class="col-12" ngModel
                             name="Password">
                     </div>
 
-                    <button class="btn btn-primary col-12 mt-3" type="submit">
+                    <button class="btn btn-primary col-12 mt-3" type="submit" (click)="buttonClicked='Login'">
                         Continue
                     </button>
                     <div class="text-center mt-2">
-                        Have an account?
-                        <li class="nav-item"><a class="nav-link text-decoration-underline" href="#">
-                            Sign In
+                        Don't have an account?
+                        <li class="nav-item"><a class="nav-link text-decoration-underline" routerLink="/sign-up-page">
+                            Sign Up
                         </a></li>
                     </div>
                 </form>

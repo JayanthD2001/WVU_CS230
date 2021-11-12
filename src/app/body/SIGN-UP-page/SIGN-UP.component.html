@@ -8,35 +8,35 @@
                     </a>
                 </div>
                 <div class="card-header">SIGN UP</div>
-                <form #signInForm=ngForm (ngSubmit)="onUpdateUserInfo(signInForm.value)">
+                <form #signUpForm=ngForm (ngSubmit)="onUpdateUserInfo(signUpForm)">
                     <div class="card body input-group mt-3">
-                        <input type="text" placeholder="First Name" aria-label="First name" class="col-12" ngModel
-                            name="FirstName">
-                        <input type="text" placeholder="Last Name" aria-label="Last name" class="col-12" ngModel
-                            name="LastName">
+                        <input type="text" placeholder="First Name" aria-label="First name" class="col-12" 
+                            ngModel name="FirstName" required firstName>
+                        <input type="text" placeholder="Last Name" aria-label="Last name" class="col-12" 
+                            ngModel name="LastName" required lastName>
                     </div>
 
                     <div class="card body input-group mt-3">
-                        <input type="text" placeholder="Display Name" aria-label="Display name" class="col-12" ngModel
-                            name="DisplayName">
+                        <input type="text" placeholder="Display Name" aria-label="Display name" class="col-12" 
+                        ngModel name="DisplayName" required DisplayName>
                     </div>
 
                     <div class="card body input-group mt-3">
-                        <input type="text" placeholder="Email Address" aria-label="Email Address" class="col-12" ngModel
-                            name="EmailAddress">
+                        <input type="text" placeholder="Email Address" aria-label="Email Address" class="col-12" 
+                            ngModel name="EmailAddress" required email>
                     </div>
 
                     <div class="card body input-group mt-3">
-                        <input type="text" placeholder="Password" aria-label="Password" class="col-12" ngModel
-                            name="Password">
+                        <input type="password" placeholder="Password" aria-label="Password" class="col-12" 
+                            ngModel name="Password" required password>
                     </div>
 
-                    <button class="btn btn-primary col-12 mt-3" type="submit">
-                        Continue
+                    <button class="btn btn-primary col-12 mt-3" type="submit" [disabled] = "!signUpForm.valid" (click)="buttonClicked='SignUp'">
+                        SIGN UP
                     </button>
                     <div class="text-center mt-2">
                         Have an account?
-                        <li class="nav-item"><a class="nav-link text-decoration-underline" href="#">
+                        <li class="nav-item"><a class="nav-link text-decoration-underline" routerLink="/sign-in-page">
                             Sign In
                         </a></li>
                     </div>

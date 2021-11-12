@@ -12,15 +12,15 @@ import { UserInfoService } from "./user-info.services";
 export class TopNavBarComponent {
     
     myInfo: UserInfo []| undefined;
-    SpecificInfo: string = "SIGN IN";
+    SpecificInfo: string = "SIGN UP";
     constructor(private userInfoService:DatabaseService) {
         this.userInfoService.data().subscribe((data: UserInfo []) => {
             console.log("TopNavBar " + data);
             this.myInfo = data;
 
-            if(this.myInfo[0].DisplayName != null && this.myInfo[0].DisplayName) {
-                this.SpecificInfo = this.myInfo[0].DisplayName;
-            }
+            //if(this.myInfo[0].DisplayName != null && this.myInfo[0].DisplayName) {
+            //    this.SpecificInfo = this.myInfo[0].DisplayName;
+            //}
         })
     }
     
